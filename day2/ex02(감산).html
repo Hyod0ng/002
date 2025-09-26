@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <h1 id = "count-text">count : 1000000</h1>
+    <button id = "btn-inc">>Inc(+)</button>
+
+    <script>
+        var countText = document.getElementById("count-text")
+        var btnInc = document.getElementById("btn-inc")
+        var count = 1000000;
+        btnInc.addEventListener("click",()=> {
+            count = count - 1
+            countText.innerText = "count : " + count
+        })
+    </script>
+
+</body>
+</html>
