@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>기차표 예약 출발&도착</title>
+</head>
+<body>
+    <h1>기차표 예약</h1>
+
+    <h2>출발역</h2>
+    <div>
+        <input type = "radio" name = "group1" checked value ="서울" />서울</div>
+        <input type = "radio" name = "group1" value ="천안" />천안</div>
+        <input type = "radio" name = "group1" value ="세종" />세종</div>
+        <input type = "radio" name = "group1" value ="익산" />익산</div>
+    </div>
+
+    <h2>도착역</h2>
+    <div>
+        <select id="cityselector">
+            <option>광주</option>
+            <option>목포</option>
+            <option>여수</option>
+        </select>
+    </div>
+    
+
+    <button id="selectbtn">제출</button>
+    <p id="txt-result">결과 : </p>
+
+    <script>
+        var selectcity = document.getElementById("cityselector")
+        var btnsubmit = document.getElementById("selectbtn")
+        var txtresult = document.getElementById("txt-result")
+        
+
+        btnsubmit.addEventListener("click", ()=> {
+            var selectedObj = document.querySelector("input[name='group1']:checked")
+            txtresult.innerText = "결과 : 출발역 - " + selectedObj.value + " / 도착역 - " + selectcity.value
+
+        })
+
+    </script>
+
+
+
+</body>
+</html>
