@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            background-color: black;
+            color: green;
+            margin: 0px;
+            padding: 0px;
+        }
+
+        .frame{
+            display: flex;;
+            width: 320px;
+            height: 240px;
+            border: Ipx solid white;
+        }
+
+        .box{
+            width: 256px;
+            height:64px;
+            background-color: blue;
+            color:white;
+            margin:8px;
+            }
+
+    </style>
+</head>
+<body>
+
+    <div class="box" style="overflow: hidden;">aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa bbbbbbbbbbbbbbbbbbbbbbbbbb cccccccccccccccccc ddddddddddddddddd</div>
+    <div class="box" style="overflow: scroll;">aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa bbbbbbbbbbbbbbbbbbbbbbbbbb cccccccccccccccccc ddddddddddddddddd</div>
+    <div class="box" style="overflow: auto;">aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa bbbbbbbbbbbbbbbbbbbbbbbbbb cccccccccccccccccc ddddddddddddddddd</div>
+ 
+    <div class="box" style="word-break: break-all;">aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa bbbbbbbbbbbbbbbbbbbbbbbbbb cccccccccccccccccc ddddddddddddddddd</div>
+    <div class="box" style="overflow-wrap: break-word;">aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa bbbbbbbbbbbbbbbbbbbbbbbbbb cccccccccccccccccc ddddddddddddddddd</div>
+
+</body>
+</html>
